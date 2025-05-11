@@ -23,7 +23,7 @@ const Lipliner = () => {
     const tagListRef = useRef(null);
     const [priceRange, setPriceRange] = useState(20.49);
     const [lipliner, setLipliner] = useState([]);
-    const { data, loading, error } = useFetch('http://makeup-api.herokuapp.com/api/v1/products.json?product_type=Lip liner');
+    const { data, loading, error } = useFetch('https://makeup-api.herokuapp.com/api/v1/products.json?product_type=Lip liner');
 
     useEffect(() => {
         setLipliner(data)

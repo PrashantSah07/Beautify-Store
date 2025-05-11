@@ -24,7 +24,7 @@ const Eyeliner = () => {
     const tagListRef = useRef(null);
     const [priceRange, setPriceRange] = useState(31);
     const [eyeliner, setEyeliner] = useState([]);
-    const { data, loading, error } = useFetch('http://makeup-api.herokuapp.com/api/v1/products.json?product_type=eyeliner');
+    const { data, loading, error } = useFetch('https://makeup-api.herokuapp.com/api/v1/products.json?product_type=eyeliner');
 
     useEffect(() => {
         setEyeliner(data)

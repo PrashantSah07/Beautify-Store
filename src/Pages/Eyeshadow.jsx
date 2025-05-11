@@ -24,7 +24,7 @@ const Eyeshadow = () => {
     const tagListRef = useRef(null);
     const [priceRange, setPriceRange] = useState(65);
     const [eyeshadow, setEyeshadow] = useState([]);
-    const { data, loading, error } = useFetch('http://makeup-api.herokuapp.com/api/v1/products.json?product_type=eyeshadow');
+    const { data, loading, error } = useFetch('https://makeup-api.herokuapp.com/api/v1/products.json?product_type=eyeshadow');
 
     useEffect(() => {
         setEyeshadow(data)

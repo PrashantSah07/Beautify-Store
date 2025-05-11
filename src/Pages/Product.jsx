@@ -25,7 +25,7 @@ const Product = () => {
     const product_type = data.product_type;
 
     const { data: relatedProducts, loading: relatedLoading } = useFetch(
-        `http://makeup-api.herokuapp.com/api/v1/products.json?product_type=${product_type}`
+        `https://makeup-api.herokuapp.com/api/v1/products.json?product_type=${product_type}`
     );
 
     const limitedRelatedProducts = relatedProducts ? relatedProducts.slice(0, 8) : [];

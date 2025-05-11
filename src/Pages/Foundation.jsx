@@ -24,7 +24,7 @@ const Foundation = () => {
     const tagListRef = useRef(null);
     const [priceRange, setPriceRange] = useState(49);
     const [foundation, setFoundation] = useState([]);
-    const { data, loading, error } = useFetch('http://makeup-api.herokuapp.com/api/v1/products.json?product_type=foundation');
+    const { data, loading, error } = useFetch('https://makeup-api.herokuapp.com/api/v1/products.json?product_type=foundation');
 
     useEffect(() => {
         setFoundation(data)
