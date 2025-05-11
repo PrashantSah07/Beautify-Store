@@ -19,7 +19,7 @@ const Product = () => {
     const imgRef = useRef(null);
     const { id } = useParams();
     const { data, loading, error } = useFetch(
-        `http://makeup-api.herokuapp.com/api/v1/products/${id}.json`
+        `https://makeup-api.herokuapp.com/api/v1/products/${id}.json`
     );
 
     const product_type = data.product_type;
